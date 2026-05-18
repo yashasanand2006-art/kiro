@@ -1,0 +1,42 @@
+.records-section {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.records-section h2 {
+  color: white;
+}
+
+.records-section h2::after {
+  background-color: var(--secondary-color);
+}
+
+.records-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.record-card {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 30px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  border-left: 5px solid var(--secondary-color);
+  transition: background 0.3s;
+}
+
+.record-card:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.record-icon {
+  font-size: 2rem;
+}
+
+.record-card p {
+  font-size: 1.1rem;
+  font-weight: 500;
+}

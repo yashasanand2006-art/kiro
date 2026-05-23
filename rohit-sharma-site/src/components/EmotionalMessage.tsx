@@ -19,8 +19,7 @@ Happy Birthdayyy! 🎂
 Happy 20!. 
 
 May your day be good!!!
-enjoy it for the fullest!!
-andd Thankyouu!
+enjoy it to the fullest!!
  ✨`;
 
   useEffect(() => {

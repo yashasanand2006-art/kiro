@@ -1,0 +1,45 @@
+/* src/styles/Cinematic.css */
+
+.cinematic-container {
+  background: radial-gradient(circle at center, rgba(30, 10, 30, 0.8) 0%, rgba(0, 0, 0, 0.95) 100%);
+}
+
+.flicker {
+  animation: flicker 1.5s infinite alternate;
+}
+
+@keyframes flicker {
+  0% { transform: scale(1) rotate(-2deg); opacity: 0.8; filter: blur(1px); }
+  25% { transform: scale(1.1) rotate(1deg); opacity: 1; filter: blur(0px); }
+  50% { transform: scale(0.9) rotate(-1deg); opacity: 0.9; filter: blur(1px); }
+  75% { transform: scale(1.05) rotate(2deg); opacity: 1; filter: blur(0px); }
+  100% { transform: scale(1) rotate(0deg); opacity: 0.8; filter: blur(1px); }
+}
+
+.smoke-particle {
+  position: absolute;
+  background: rgba(200, 200, 200, 0.3);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+.glow-text {
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 105, 180, 0.3);
+}
+
+.candle-glow {
+  background: radial-gradient(circle, rgba(255, 165, 0, 0.4) 0%, transparent 70%);
+  filter: blur(4px);
+}
+
+.scene-overlay {
+  background: linear-gradient(to bottom, transparent 0%, rgba(0,0,0,0.4) 100%);
+}

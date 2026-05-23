@@ -1,8 +1,7 @@
-import React, { useState, useCallback, useEffect } from 'react';
+import React, { useState, useCallback, } from 'react';
 import { motion, AnimatePresence, useDragControls } from 'framer-motion';
 import confetti from 'canvas-confetti';
 import Cake from './Cake';
-import Girl from './Girl';
 import cinematicBg from '../assets/cinematic-bg.jpg';
 import bdyVideo from '../assets/bdy-video.mp4';
 import bdyVideo2 from '../assets/bdy-video-2.mp4';
